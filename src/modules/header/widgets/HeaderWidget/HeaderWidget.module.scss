@@ -5,14 +5,15 @@
     width: 100vw;
     min-height: 85vh;
 
-    background-image: url('../../../../assets/images/output15.png');
+    background-image: url('../../../../assets/images/test3.png');
     background-position: center;
     background-color: $bgYellow;
 
     &__topWidget {
-        background-color: #FF482B;
+        background-color:$bgBrown;
         height: 20px;
         width: 100vw;
+        background-color: #68370F;
     }
 
     &__menu {
@@ -26,13 +27,7 @@
         h1 {
             font-size: 50px;
             font-weight: 700;
-            color: #181538;
-
-            & span {
-                font-size: 50px;
-                font-weight: 700;
-                color: #FF482B;
-            }
+            color: $brown;
         }
 
 
@@ -46,7 +41,7 @@
             list-style-type: none;
             font-size: 25px;
             font-weight: 500;
-            color: #181538;
+            color: $brown;
             cursor: pointer;
         }
     }
@@ -64,8 +59,8 @@
         h1 {
             font-size: 70px;
             font-weight: 700;
-            color: #181538;
             width: 700px;
+            color: #472714;
         }
 
         p {
@@ -74,6 +69,7 @@
             width: 552px;
             margin-bottom: 30px;
             font-weight: 600;
+            color: #68370F;
         }
 
         &Button {

@@ -16,13 +16,30 @@ const FooterWidget = () => {
             <p className={styles["footerWidget__title"]}>Join us</p>
             <p className={styles["footerWidget__subtitle"]}>
               Embrace the unconventional and embark on an enthralling journey
-              guided by the $TRAMP meme token, traversing the captivating
+              guided by the $WINNIE meme token, traversing the captivating
               landscapes of the crypto universe!
             </p>
           </div>
           <div className={styles["footerWidget__socialMedia"]}>
-            <TelegramIcon width={50} height={40} />
-            <TwitterIcon />
+            <div
+              onClick={() =>
+                window.open("https://t.me/winnieton", "_blank", "target")
+              }
+            >
+              <TelegramIcon width={50} height={40} />
+            </div>
+
+            <div
+              onClick={() =>
+                window.open(
+                  "https://twitter.com/Winnieonton",
+                  "_blank",
+                  "target"
+                )
+              }
+            >
+              <TwitterIcon />
+            </div>
           </div>
         </div>
       </Element>

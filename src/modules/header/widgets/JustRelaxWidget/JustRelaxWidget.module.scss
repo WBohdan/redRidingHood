@@ -1,7 +1,7 @@
 @import '../../../../styles/shared.scss';
 
 .justRelaxWidget {
-    background-image: url('../../../../assets/images/output15.png');
+    background-image: url('../../../../assets/images/test3.png');
     background-position: center;
     padding: 100px 0;
     display: flex;
@@ -17,24 +17,17 @@
     }
 
     &__title {
-        color: #181538;
+        color: #472714;;
         font-size: 64px;
         font-weight: 800;
         text-align: center;
         margin: 0 40px 15px;
         max-width: 700px;
-
-        span {
-            color: #FF482B;
-            font-size: 64px;
-            font-weight: 800;
-        }
-
     }
 
     &__description {
         font-size: 18px;
-        color: #181538;
+        color: #68370F;
         font-weight: 600;
         margin: 0 40px 50px;
         text-align: center;

@@ -1,10 +1,7 @@
-import { trumpWithFlags } from "@images";
 import styles from "./RocketAnimation.module.scss";
-import clsx from "clsx";
-import Lottie from "react-lottie";
 
-import spaceAnimation from "../../assets/animations/spaceAnimation1.json";
 import { useEffect, useState } from "react";
+import { video1 } from "../../../src/assets/videos";
 
 interface IRocketAnimationProps {
   showRocketAnimation: boolean;
@@ -13,16 +10,6 @@ interface IRocketAnimationProps {
 
 const RocketAnimation = ({ setShowRocketAnimation }: IRocketAnimationProps) => {
   const [startAnimation, setStartAnimation] = useState(false);
-
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: spaceAnimation,
-
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
 
   useEffect(() => {
     setStartAnimation(true);
@@ -36,7 +23,7 @@ const RocketAnimation = ({ setShowRocketAnimation }: IRocketAnimationProps) => {
 
   return (
     <div className={styles["rocketAnimation"]}>
-      <div
+      {/* <div
         className={clsx(styles["rocketAnimation__background"], {
           [styles["visible"]]: startAnimation
         })}
@@ -50,7 +37,8 @@ const RocketAnimation = ({ setShowRocketAnimation }: IRocketAnimationProps) => {
         className={clsx(styles["rocketAnimation__img"], {
           [styles["launched"]]: startAnimation
         })}
-      />
+      /> */}
+      {/* <video src={video1} autoPlay loop /> */}
     </div>
   );
 };

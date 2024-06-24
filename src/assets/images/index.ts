@@ -18,6 +18,10 @@ import trampoline from "./1t.png";
 import trampWithFlag from "./1.png";
 import trumpWithFlags from "./trumpWithFlags.webp";
 import trumpOnTrampoline from "./trumpOnTrampoline.webp";
+import Test2 from "./Test2.png";
+
+import Test3 from "./test3.png";
+import winipoohLogo from "./winipoohLogo.png";
 
 export {
   logo,
@@ -38,5 +42,8 @@ export {
   trampoline,
   trampWithFlag,
   trumpWithFlags,
-  trumpOnTrampoline
+  trumpOnTrampoline,
+  Test2,
+  Test3,
+  winipoohLogo
 };

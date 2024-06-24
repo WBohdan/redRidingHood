@@ -1,6 +1,3 @@
-import { useState } from "react";
-import RocketAnimation from "./components/RocketAnimation";
-
 // modules
 import {
   HeaderWidget,
@@ -13,21 +10,21 @@ import {
 import "./styles/styles.scss";
 
 function App() {
-  const [showRocketAnimation, setShowRocketAnimation] = useState(false);
+  // const [showRocketAnimation, setShowRocketAnimation] = useState(false);
 
   return (
     <div>
       <HeaderWidget />
       <TokenomicsWidget />
-      <JustRelaxWidget setShowRocketAnimation={setShowRocketAnimation} />
+      <JustRelaxWidget setShowRocketAnimation={() => {}} />
       <FooterWidget />
 
-      {showRocketAnimation && (
+      {/* {true && (
         <RocketAnimation
           showRocketAnimation={showRocketAnimation}
           setShowRocketAnimation={setShowRocketAnimation}
         />
-      )}
+      )} */}
     </div>
   );
 }

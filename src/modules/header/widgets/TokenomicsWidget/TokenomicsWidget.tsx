@@ -14,23 +14,16 @@ const TokenomicsWidget = () => {
           <div className={styles["tokenomicsWidget__content"]}>
             <div>
               <p className={styles["tokenomicsWidget__description"]}>
-                The tokenomics of $TRAMP transcend conventional norms,
-                shattering the traditional confines of degeneracy. Get ready for
-                an exciting adventure as we reveal the captivating intricacies
-                that define the $TRAMP ecosystem.
+                Tokenomics $WINNIE follows conventional tokenomics. Get ready
+                for an exciting adventure as we reveal the fascinating ins and
+                outs that define the $WINNIE ecosystem.
               </p>
 
-              <p className={styles["tokenomicsWidget__descriptionItem"]}>
-                10% development & giveaways
-              </p>
-              <p className={styles["tokenomicsWidget__descriptionItem"]}>
-                5% marketing
-              </p>
               <p className={styles["tokenomicsWidget__descriptionItem"]}>
                 5% team
               </p>
               <p className={styles["tokenomicsWidget__descriptionItem"]}>
-                80% dedust
+                95% dedust
               </p>
             </div>
 
