@@ -3,11 +3,6 @@ import styles from "./RocketAnimation.module.scss";
 // import { useEffect, useState } from "react";
 // import { video1 } from "../../../src/assets/videos";
 
-interface IRocketAnimationProps {
-  showRocketAnimation: boolean;
-  setShowRocketAnimation: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
 const RocketAnimation = () => {
   // useEffect(() => {
   //   setStartAnimation(true);
