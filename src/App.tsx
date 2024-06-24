@@ -1,4 +1,5 @@
 // modules
+import { useState } from "react";
 import {
   HeaderWidget,
   TokenomicsWidget,
@@ -9,22 +10,24 @@ import {
 // styles
 import "./styles/styles.scss";
 
+import RocketAnimation from "./components/RocketAnimation";
+
 function App() {
-  // const [showRocketAnimation, setShowRocketAnimation] = useState(false);
+  const [showRocketAnimation, setShowRocketAnimation] = useState(false);
 
   return (
     <div>
       <HeaderWidget />
       <TokenomicsWidget />
-      <JustRelaxWidget setShowRocketAnimation={() => {}} />
+      <JustRelaxWidget setShowRocketAnimation={setShowRocketAnimation} />
       <FooterWidget />
 
-      {/* {true && (
+      {showRocketAnimation && (
         <RocketAnimation
           showRocketAnimation={showRocketAnimation}
           setShowRocketAnimation={setShowRocketAnimation}
         />
-      )} */}
+      )}
     </div>
   );
 }

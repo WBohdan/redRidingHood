@@ -1,37 +1,42 @@
+import { winipoohLogo } from "@images";
 import styles from "./RocketAnimation.module.scss";
+import clsx from "clsx";
 
-// import { useEffect, useState } from "react";
-// import { video1 } from "../../../src/assets/videos";
+import { useEffect, useState } from "react";
 
-const RocketAnimation = () => {
-  // useEffect(() => {
-  //   setStartAnimation(true);
-  //   setTimeout(() => {
-  //     setStartAnimation(false);
-  //     setTimeout(() => {
-  //       setShowRocketAnimation(false);
-  //     }, 300);
-  //   }, 3000);
-  // }, []);
+interface IRocketAnimationProps {
+  showRocketAnimation: boolean;
+  setShowRocketAnimation: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const RocketAnimation = ({ setShowRocketAnimation }: IRocketAnimationProps) => {
+  const [startAnimation, setStartAnimation] = useState(false);
+
+  useEffect(() => {
+    setStartAnimation(true);
+    setTimeout(() => {
+      setStartAnimation(false);
+      setTimeout(() => {
+        setShowRocketAnimation(false);
+      }, 300);
+    }, 4500);
+  }, []);
 
   return (
     <div className={styles["rocketAnimation"]}>
-      {/* <div
+      <div
         className={clsx(styles["rocketAnimation__background"], {
           [styles["visible"]]: startAnimation
         })}
-      >
-        <Lottie options={defaultOptions} />
-      </div>
+      />
 
       <img
-        src={trumpWithFlags}
+        src={winipoohLogo}
         alt="Rocket"
         className={clsx(styles["rocketAnimation__img"], {
           [styles["launched"]]: startAnimation
         })}
-      /> */}
-      {/* <video src={video1} autoPlay loop /> */}
+      />
     </div>
   );
 };
