@@ -1,25 +1,23 @@
 import styles from "./RocketAnimation.module.scss";
 
-import { useEffect, useState } from "react";
-import { video1 } from "../../../src/assets/videos";
+// import { useEffect, useState } from "react";
+// import { video1 } from "../../../src/assets/videos";
 
 interface IRocketAnimationProps {
   showRocketAnimation: boolean;
   setShowRocketAnimation: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const RocketAnimation = ({ setShowRocketAnimation }: IRocketAnimationProps) => {
-  const [startAnimation, setStartAnimation] = useState(false);
-
-  useEffect(() => {
-    setStartAnimation(true);
-    setTimeout(() => {
-      setStartAnimation(false);
-      setTimeout(() => {
-        setShowRocketAnimation(false);
-      }, 300);
-    }, 3000);
-  }, []);
+const RocketAnimation = () => {
+  // useEffect(() => {
+  //   setStartAnimation(true);
+  //   setTimeout(() => {
+  //     setStartAnimation(false);
+  //     setTimeout(() => {
+  //       setShowRocketAnimation(false);
+  //     }, 300);
+  //   }, 3000);
+  // }, []);
 
   return (
     <div className={styles["rocketAnimation"]}>

@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { Button } from "@ui";
 
 // assets
-import { trumpOnTrampoline, winipoohLogo } from "@images";
+import { winipoohLogo } from "@images";
 
 // styles
 import styles from "./HeaderWidget.module.scss";
