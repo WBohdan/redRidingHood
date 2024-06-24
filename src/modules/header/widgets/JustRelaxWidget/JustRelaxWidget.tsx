@@ -20,7 +20,7 @@ interface IJustRelaxWidgetProps {
 }
 
 const JustRelaxWidget = ({ setShowRocketAnimation }: IJustRelaxWidgetProps) => {
-  const handleLaunch = () => setShowRocketAnimation(true);
+  // const handleLaunch = () => setShowRocketAnimation(true);
 
   useEffect(() => {
     const cards = document.querySelectorAll<HTMLDivElement>(".card");
