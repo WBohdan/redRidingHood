@@ -125,7 +125,7 @@ const JustRelaxWidget = ({ setShowRocketAnimation }: IJustRelaxWidgetProps) => {
             You have to find all the same stickers. Good luck:)
           </p>
 
-          <button onClick={handleLaunch} />
+          {/* <button onClick={handleLaunch} /> */}
 
           <ul className="cards">
             <li className="card">
