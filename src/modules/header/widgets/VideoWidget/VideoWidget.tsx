@@ -10,7 +10,9 @@ const VideoWidget = () => {
       <div className={styles["tokenomicsWidget__topWidget"]}></div>
       <Element name="tokenomics">
         <div className={styles["tokenomicsWidget"]}>
-          <div className={styles["tokenomicsWidget__title"]}>WINNI Concert</div>
+          <div className={styles["tokenomicsWidget__title"]}>
+            Winnie Concert
+          </div>
 
           <div className={styles["tokenomicsWidget__content"]}>
             <div>

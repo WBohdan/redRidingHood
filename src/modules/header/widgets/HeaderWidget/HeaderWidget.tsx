@@ -42,7 +42,7 @@ const HeaderWidget = () => {
           </p>
           <div className={styles["headerWidget__contentButton"]}>
             <Button
-              text="Buy honey for winnipooh 🍯"
+              text="Buy honey for Winnie 🍯"
               onClick={() =>
                 window.open(
                   "https://dedust.io/swap/TON/EQDLHDxuSXLpMYqZFjKWYsQtTQ8lr5_vhNdIVD3EReGlOPYk?amount=20000000000",
