@@ -4,7 +4,8 @@ import {
   HeaderWidget,
   TokenomicsWidget,
   JustRelaxWidget,
-  FooterWidget
+  FooterWidget,
+  MemesWidget
 } from "./modules/header/widgets";
 
 // styles
@@ -20,6 +21,7 @@ function App() {
       <HeaderWidget />
       <TokenomicsWidget />
       <JustRelaxWidget setShowRocketAnimation={setShowRocketAnimation} />
+      <MemesWidget />
       <FooterWidget />
 
       {showRocketAnimation && (

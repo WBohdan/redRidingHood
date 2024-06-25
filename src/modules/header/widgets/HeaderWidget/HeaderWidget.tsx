@@ -41,7 +41,16 @@ const HeaderWidget = () => {
             be fun. 🐝🌻🍯
           </p>
           <div className={styles["headerWidget__contentButton"]}>
-            <Button text="Buy honey for winnipooh 🍯" />
+            <Button
+              text="Buy honey for winnipooh 🍯"
+              onClick={() =>
+                window.open(
+                  "https://wonton.fun/trade/UQDLHDxuSXLpMYqZFjKWYsQtTQ8lr5_vhNdIVD3EReGlOKvh",
+                  "_blank",
+                  "target"
+                )
+              }
+            />
           </div>
         </div>
         <img src={winipoohLogo} />

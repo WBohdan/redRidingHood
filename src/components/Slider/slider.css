@@ -1,0 +1,62 @@
+.parent{
+padding: 0 30px;
+}
+
+.slider {
+  margin: 0 10px;
+  overflow: "hidden";
+  padding: 2rem 0;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slider__content {
+  width: 100%;
+  border-radius: 10px;
+  height: 400px;
+  background-color: #FEFEED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.slider__content>p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+.slider__content span {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #68370F;
+}
+
+
+.react-multi-carousel-list {
+  padding: 0rem 0 2rem 0;
+}
+
+.custom-dot-list-style button {
+  border: none;
+  /* background: rgb(255, 68, 68); */
+  background-color: #A0A49F;
+}
+
+.react-multi-carousel-dot.react-multi-carousel-dot--active button {
+  background: #FEFEED !important;
+}
+
+@media (max-width: 767px) {
+  .parent{
+    padding: 0 10px;
+    }
+}
