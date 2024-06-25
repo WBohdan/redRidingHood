@@ -20,7 +20,6 @@ const TokenomicsWidget = () => {
             >
               contest
             </span>{" "}
-            will be displayed here
           </p>
 
           <Slider />

@@ -45,7 +45,7 @@ const HeaderWidget = () => {
               text="Buy honey for winnipooh 🍯"
               onClick={() =>
                 window.open(
-                  "https://wonton.fun/trade/UQDLHDxuSXLpMYqZFjKWYsQtTQ8lr5_vhNdIVD3EReGlOKvh",
+                  "https://dedust.io/swap/TON/EQDLHDxuSXLpMYqZFjKWYsQtTQ8lr5_vhNdIVD3EReGlOPYk?amount=20000000000",
                   "_blank",
                   "target"
                 )
