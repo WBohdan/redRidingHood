@@ -10,7 +10,7 @@
     background-color: $bgYellow;
 
     &__topWidget {
-        background-color:$bgBrown;
+        background-color: $bgBrown;
         height: 20px;
         width: 100vw;
         background-color: #68370F;
@@ -85,13 +85,15 @@
         0% {
             transform: scale(1);
         }
+
         50% {
             transform: scale(1.05);
         }
+
         100% {
             transform: scale(1);
         }
-      }
+    }
 
 }
 

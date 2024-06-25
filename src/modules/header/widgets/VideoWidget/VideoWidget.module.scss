@@ -1,0 +1,71 @@
+@import '../../../../styles/shared.scss';
+
+
+.tokenomicsWidget {
+    width: 100vw;
+    padding: 100px 0;
+    background-image: url('../../../../assets/images/test3.png');
+    background-color: $bgYellow; // background-size: 100vw;
+    position: relative;
+
+    &__topWidget {
+        background-color: #FFFFFF;
+        height: 20px;
+        width: 100vw;
+    }
+
+    &__title {
+        color: #FEFEED;
+        font-size: 64px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #472714;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        color: #FEFEED;
+        font-weight: 600;
+        margin: 0 40px 50px;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+        video {
+            // width: 700px;
+            width: 40vw;
+            border-radius: 10px;
+        }
+    }
+
+}
+
+
+@media (max-width: 910px) {
+    .tokenomicsWidget {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+            
+            video {
+                width: 90vw;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .tokenomicsWidget {
+        padding: 50px 0;
+
+        &__title {
+            font-size: 45px;
+        }
+    }
+}
