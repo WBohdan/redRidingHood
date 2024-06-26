@@ -6,6 +6,10 @@ import meme1 from "./memes/meme1.jpg";
 import meme2 from "./memes/meme2.jpg";
 import meme3 from "./memes/meme3.jpg";
 import meme4 from "./memes/meme4.png";
+import meme5 from "./memes/meme5.jpeg";
+import meme6 from "./memes/meme6.jpeg";
+import meme7 from "./memes/meme7.jpeg";
+import meme8 from "./memes/meme8.jpeg";
 
 const responsive = {
   desktop: {
@@ -31,7 +35,8 @@ const responsive = {
 };
 const sliderImageUrl = [
   {
-    url: meme1
+    url: meme1,
+    creator: "@bb_cryptoPro_clyton"
   },
   {
     url: meme2
@@ -41,6 +46,22 @@ const sliderImageUrl = [
   },
   {
     url: meme4
+  },
+  {
+    url: meme5,
+    creator: "@DoctorKoala"
+  },
+  {
+    url: meme6,
+    creator: "@DoctorKoala"
+  },
+  {
+    url: meme7,
+    creator: "@DoctorKoala"
+  },
+  {
+    url: meme8,
+    creator: "@Romanov"
   }
 ];
 const Slider = () => {
@@ -57,12 +78,18 @@ const Slider = () => {
         partialVisible={false}
         dotListClass="custom-dot-list-style"
       >
-        {sliderImageUrl.map((imageUrl, index) => {
-          console.log("imageUrl", imageUrl);
+        {sliderImageUrl.map((item, index) => {
+          // console.log("imageUrl", imageUrl);
           return (
             <div className="slider" key={index}>
               <div className="slider__content">
-                <img src={imageUrl.url} />
+                {!!item.creator && (
+                  <p>
+                    Author: <span>{item.creator}</span>
+                  </p>
+                )}
+
+                <img src={item.url} />
                 {/* <p>
                   The meme will be published after the{" "}
                   <span

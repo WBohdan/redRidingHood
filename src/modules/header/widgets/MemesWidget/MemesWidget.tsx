@@ -18,6 +18,7 @@ const TokenomicsWidget = () => {
           >
             contest
           </span>{" "}
+          and not only
         </p>
 
         <Slider />
