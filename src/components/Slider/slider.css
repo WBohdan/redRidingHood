@@ -44,7 +44,7 @@ padding: 0 30px;
   line-height: 23px;
   color: black;
   text-decoration-line: underline;
-  cursor: pointer;
+  cursor: default !important;
 }
 
 
