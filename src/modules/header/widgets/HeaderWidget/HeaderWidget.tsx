@@ -45,7 +45,7 @@ const HeaderWidget = () => {
               text="Buy honey for Winnie 🍯"
               onClick={() =>
                 window.open(
-                  "https://dedust.io/swap/TON/EQDLHDxuSXLpMYqZFjKWYsQtTQ8lr5_vhNdIVD3EReGlOPYk?amount=20000000000",
+                  "https://dedust.io/swap/TON/EQBGBW1-2mH7GNcMkpOxH04R6PU3SQ48qMIaP7yqp4RtYkvW?amount=20000000000",
                   "_blank",
                   "target"
                 )
