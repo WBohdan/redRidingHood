@@ -23,7 +23,11 @@ const FooterWidget = () => {
           <div className={styles["footerWidget__socialMedia"]}>
             <div
               onClick={() =>
-                window.open("https://t.me/winnie_community", "_blank", "target")
+                window.open(
+                  "https://t.me/winnie_communitycto",
+                  "_blank",
+                  "target"
+                )
               }
             >
               <TelegramIcon width={50} height={40} />
@@ -32,7 +36,7 @@ const FooterWidget = () => {
             <div
               onClick={() =>
                 window.open(
-                  "https://twitter.com/Winnieonton",
+                  "https://x.com/winniechatcto?s=21",
                   "_blank",
                   "target"
                 )
