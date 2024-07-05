@@ -17,7 +17,7 @@ const HeaderWidget = () => {
   return (
     <div className={styles["headerWidget"]}>
       <img src={redGirl} className={styles["headerWidget__logo"]} />
-      <h1 className={styles["headerWidget__title"]}>Red Riding Hood</h1>
+      <h1 className={styles["headerWidget__title"]}>Little Red Riding Hood</h1>
       <p className={styles["headerWidget__subtitle"]}>
         Standing up for one's beliefs, reminding us that each of us can be a
         hero in our own story.
