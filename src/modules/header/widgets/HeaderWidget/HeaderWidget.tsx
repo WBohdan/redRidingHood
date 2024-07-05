@@ -17,9 +17,10 @@ const HeaderWidget = () => {
   return (
     <div className={styles["headerWidget"]}>
       <img src={redGirl} className={styles["headerWidget__logo"]} />
-      <h1 className={styles["headerWidget__title"]}>Red Riding Hood on TON</h1>
+      <h1 className={styles["headerWidget__title"]}>Red Riding Hood</h1>
       <p className={styles["headerWidget__subtitle"]}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, sit.
+        Standing up for one's beliefs, reminding us that each of us can be a
+        hero in our own story.
       </p>
 
       <div className={styles["headerWidget__contract"]}>
