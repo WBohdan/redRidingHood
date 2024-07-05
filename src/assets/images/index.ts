@@ -19,11 +19,22 @@ import trampWithFlag from "./1.png";
 import trumpWithFlags from "./trumpWithFlags.webp";
 import trumpOnTrampoline from "./trumpOnTrampoline.webp";
 import Test2 from "./Test2.png";
+import redGirl from "./redGirl.png";
+import twitterIcon from "./twitterIcon.png";
+import geckoterminalIcon from "./geckoterminalIcon.png";
+import dexscreenerIcon from "./dexscreenerIcon.png";
+import dextoolsIcon from "./dextoolsIcon.png";
+import telegramIcon from "./telegramIcon.png";
 
 import Test3 from "./test3.png";
 import winipoohLogo from "./winipoohLogo.png";
 
 export {
+  telegramIcon,
+  geckoterminalIcon,
+  dexscreenerIcon,
+  twitterIcon,
+  dextoolsIcon,
   logo,
   headerBg,
   appLogo,
@@ -45,5 +56,6 @@ export {
   trumpOnTrampoline,
   Test2,
   Test3,
-  winipoohLogo
+  winipoohLogo,
+  redGirl
 };

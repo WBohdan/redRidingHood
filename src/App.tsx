@@ -1,26 +1,26 @@
 // modules
-import { useState } from "react";
+// import { useState } from "react";
 import {
-  HeaderWidget,
-  TokenomicsWidget,
-  JustRelaxWidget,
-  FooterWidget,
-  MemesWidget,
-  VideoWidget
+  HeaderWidget
+  // TokenomicsWidget,
+  // JustRelaxWidget,
+  // FooterWidget,
+  // MemesWidget,
+  // VideoWidget
 } from "./modules/header/widgets";
 
 // styles
 import "./styles/styles.scss";
 
-import RocketAnimation from "./components/RocketAnimation";
+// import RocketAnimation from "./components/RocketAnimation";
 
 function App() {
-  const [showRocketAnimation, setShowRocketAnimation] = useState(false);
+  // const [showRocketAnimation, setShowRocketAnimation] = useState(false);
 
   return (
     <div>
       <HeaderWidget />
-      <TokenomicsWidget />
+      {/* <TokenomicsWidget />
       <JustRelaxWidget setShowRocketAnimation={setShowRocketAnimation} />
       <MemesWidget />
       <VideoWidget />
@@ -31,7 +31,7 @@ function App() {
           showRocketAnimation={showRocketAnimation}
           setShowRocketAnimation={setShowRocketAnimation}
         />
-      )}
+      )} */}
     </div>
   );
 }

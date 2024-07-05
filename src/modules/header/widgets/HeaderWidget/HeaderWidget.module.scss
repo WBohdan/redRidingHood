@@ -3,84 +3,23 @@
 
 .headerWidget {
     width: 100vw;
-    min-height: 85vh;
+    min-height: 100vh;
 
-    background-image: url('../../../../assets/images/test3.png');
+    background-image: url('../../../../assets/images/headerBg.webp');
+    background-size:cover;
     background-position: center;
     background-color: $bgYellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 100px;
 
-    &__topWidget {
-        background-color: $bgBrown;
-        height: 20px;
-        width: 100vw;
-        background-color: #68370F;
+    &__logo{
+        width: 400px;
+        animation: levitate 3s ease-in-out infinite;
     }
-
-    &__menu {
-        height: 65px;
-        background-color: #FEFEED;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 40px;
-
-        h1 {
-            font-size: 50px;
-            font-weight: 700;
-            color: $brown;
-        }
-
-        nav {
-            display: flex;
-            gap: 50px;
-        }
-
-        li {
-            list-style-type: none;
-            font-size: 25px;
-            font-weight: 500;
-            color: $brown;
-            cursor: pointer;
-        }
-    }
-
-    &__content {
-        width: min-content;
-
-        &Wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 700px;
-        }
-
-        h1 {
-            font-size: 70px;
-            font-weight: 700;
-            width: 700px;
-            color: #472714;
-        }
-
-        p {
-            font-size: 24px;
-            color: #181538;
-            width: 552px;
-            margin-bottom: 30px;
-            font-weight: 600;
-            color: #68370F;
-        }
-
-        &Button {
-            width: 340px;
-        }
-    }
-
-    img {
-        height: 500px;
-        margin-left: 99px;
-        animation: levitate 5s ease-in-out infinite;
-    }
-
+    
     @keyframes levitate {
         0% {
             transform: scale(1);
@@ -95,159 +34,80 @@
         }
     }
 
-}
-
-@media (max-width: 1376px) {
-    .headerWidget {
-        &__content {
-            h1 {
-                width: 600px;
-            }
-        }
-
-        img {
-            margin-left: 80px;
-        }
+    &__title{
+        font-size: 60px;
+        font-weight: 700;
+        margin: 30px 40px 20px;
+        color: #A33230;
+        text-align: center;
     }
 
+    &__subtitle{
+        font-size: 30px;
+        font-weight: 800;
+        color: #A33230;
+        text-align: center;
+        margin: 0 40px;
 
-}
-
-@media (max-width: 1254px) {
-    .headerWidget {
-        &__content {
-
-
-            h1 {
-                width: 500px;
-                font-size: 60px;
-            }
-
-            p {
-                width: 500px;
-            }
-        }
-
-        img {
-            margin-left: 60px;
-        }
     }
 
-
-}
-
-@media (max-width: 1139px) {
-    .headerWidget {
-        &__menu {
-            h1 {
-                font-size: 40px;
-
-                & span {
-                    font-size: 40px;
-                }
-            }
-        }
-
-        &__content {
-            h1 {
-                width: 400px;
-                font-size: 60px;
-            }
-
-            p {
-                width: 400px;
-            }
-        }
-
-        img {
-            margin-left: 40px;
-        }
+    &__contract{
+        border: 4px solid white;
+        border-radius: 20px;
+        padding: 30px;
+        color: white;
+        font-size: 24px;
+        font-weight: 800;
+        margin: 40px 40px 0;
+        background-color: rgba(163, 50, 48, 0.3);
+        word-break: break-all;
+        text-align: center;
     }
-}
+
+    &__buttons{
+        margin: 30px 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+
+        & > img{
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+            transition: transform 0.25s linear;
 
 
-@media (max-width: 1000px) {
-    .headerWidget {
-        &__content {
-            &Wrapper {
-                flex-direction: column-reverse;
-            }
-
-            h1 {
-                width: auto;
-                font-size: 40px;
-                text-align: center;
-                margin-top: 20px;
-            }
-
-            p {
-                font-size: 18px;
-                text-align: center;
-                margin-top: 16px;
-            }
-
-            &Button {
-                margin: 0 auto;
-            }
-        }
-
-        img {
-            height: 300px;
-            margin: 0;
-        }
-    }
-}
-
-@media (max-width: 867px) {
-    .headerWidget {
-        &__menu {
-            height: 100px;
-            flex-direction: column;
-            padding: 10px 0 10px 0;
-        }
-    }
-}
-
-@media (max-width: 542px) {
-    .headerWidget {
-        &__menu {
-            nav {
-                gap: 30px;
+            &:hover{
+                transform: scale(1.14);
             }
         }
     }
 }
 
 
-@media (max-width: 488px) {
-    .headerWidget {
-        &__menu {
-            nav {
-                gap: 20px;
-            }
 
-            li {
-                font-size: 20px;
-            }
+
+@media (max-width: 767px) {
+    .headerWidget {
+        padding: 50px 0 50px;
+
+        &__title{
+            font-size: 50px;
+        }
+    
+        &__subtitle{
+            font-size: 24px;
         }
     }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 631px) {
     .headerWidget {
-        &__menu {
-            nav {
-                gap: 20px;
-            }
-        }
-
-        &__content {
-            h1 {
-                width: 360px;
-            }
-
-            p {
-                width: 360px;
+        &__buttons{
+            & > img{
+                width: 65px;
+                height: 65px;
             }
         }
     }
